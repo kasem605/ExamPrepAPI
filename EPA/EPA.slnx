@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="EPA.Domain/EPA.Domain.csproj" />
+  <Project Path="EPA.Infrastructure/EPA.Infrastructure.csproj" />
+</Solution>
