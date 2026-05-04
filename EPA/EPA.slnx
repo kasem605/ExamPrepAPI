@@ -1,4 +1,5 @@
 <Solution>
-  <Project Path="EPA.Domain/EPA.Domain.csproj" />
-  <Project Path="EPA.Infrastructure/EPA.Infrastructure.csproj" />
+  <Project Path="EPA.Core/EPA.Core.csproj" Id="661fe2c7-219c-49b2-b9f3-0ad551eba42b" />
+  <Project Path="EPA.Infrastructure/EPA.Infrastructure.csproj" Id="3261f600-8911-47ad-bddb-0183267e5d79" />
+  <Project Path="EPA.WebApi/EPA.WebApi.csproj" Id="662d7ea4-80bf-480a-ba63-285adbbbac5a" />
 </Solution>

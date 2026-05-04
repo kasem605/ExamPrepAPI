@@ -1,27 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.Extensions.Logging;
+using Oracle.ManagedDataAccess.Client;
+using System.Data;
 
 namespace EPA.Infrastructure.Helpers
 {
     public class DBHelper : IDBHelper
     {
-        private readonly string _connectionString;
+        private readonly Connectionstrings _connectionString;
 
-        private readonly ILogger<DBHelper> _iLogger;
+        private readonly ILogger<DBHelper>   _iLogger;
 
-        public DBHelper(ILogger<DBHelper> iLogger)
+        public DBHelper(string connectionString, ILogger<DBHelper> iLogger)
         {
+            _connectionString = connectionString;
             _iLogger = iLogger;
         }
 
-        public async Task<DataSet> GetListDataAsync<T>(string key)
+        public async Task<DataSet> GetQuestionDataBySystemAsync(string storedProcedure, IList<OracleParameter> parameters)
         {
-            // Implementation for fetching data from the database
-            // This is a placeholder implementation
-            return await Task.FromResult(new DataSet());
+            throw new NotImplementedException();
         }
     }
 }
